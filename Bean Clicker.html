@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="bean clicker.css">
+        <Title>Banana clicker</Title>
+        <link rel="icon" type="image/x-icon" href="">
+    </head>
+    <body>
+        <h1 style="text-align:center">banana clicker</h1>
+        <script>
+            var Bananas = 0;
+            function onClick() {
+                Bananas += Upper;
+                document.getElementById("banana"). innerHTML = Bananas;
+            };
+            var c1 = 0;
+            var Cost = 20;
+            var Upper = 1;
+            var cup = 15;
+            function noClick() {
+                if (Bananas>=Cost){
+                    Bananas-= Cost;
+                    Upper++;
+                    Cost+= cup;
+                    cup+= 15;
+                    c1++;
+                    document.getElementById("costs"). innerHTML = Cost;
+                    document.getElementById("adds"). innerHTML = Upper;
+                    document.getElementById("banana"). innerHTML = Bananas;
+                    document.getElementById("C1"). innerHTML = c1;
+                    console.log(Bananas);
+                    console.log(Cost);
+                    console.log(cup);
+                    console.log(Upper);
+                }
+            };
+        
+        </script>
+        <h2 style="text-align:center; margin-left:auto">Bananas: <a id="banana">0</a></h4>
+        <img src="C:\HTML stuffs\Images\banana.gif" width="20%" class="center" style="margin-left:auto" type="button" onClick="onClick()">
+        <h3 style="margin-left:30px">Shop</h3>
+        <img src="C:\HTML stuffs\Images\bananas dancing.gif" width="15%" style="text-align:center; margin-left:30px; border:7px solid black" type="button" onClick="noClick()">
+        <p style="margin-left:30px">Cost: <a id="costs">20</a>, adds: 1, Level: <a id="C1">0</a>, adding: <a id="adds">1</a></p>
+    </body>
+<!--make button an image rather than text-->
